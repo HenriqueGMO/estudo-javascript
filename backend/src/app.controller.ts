@@ -35,4 +35,12 @@ export class AppController {
   getDivs(@Query('var1') var1: number, @Query('var2') var2: number): number {
     return this.appService.divis(var1, var2);
   }
+  @Get('modul')
+  getModul(@Query('var1') var1: number, @Query('var2') var2: number): number {
+    return this.appService.modul(var1, var2);
+  }
+  @Get('expon')
+  getExpon(@Query('var1') var1: number, @Query('var2') var2: number): number {
+    return this.appService.expon(var1, var2);
+  }
 }

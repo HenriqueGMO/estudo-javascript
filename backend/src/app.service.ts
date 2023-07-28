@@ -23,4 +23,10 @@ export class AppService {
   divis(var1: any, var2: any): number {
     return parseInt(var1) / Number(var2);
   }
+  modul(var1: any, var2: any): number {
+    return parseInt(var1) % Number(var2);
+  }
+  expon(var1: any, var2: any): number {
+    return parseInt(var1) ** Number(var2);
+  }
 }
