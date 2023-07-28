@@ -24,7 +24,15 @@ export class AppController {
     return this.appService.soma(var1, var2);
   }
   @Get('mult')
-  getMult(@Query('var3') var3: number, @Query('var4') var4: number): number {
-    return this.appService.mult(var3, var4);
+  getMult(@Query('var1') var1: number, @Query('var2') var2: number): number {
+    return this.appService.mult(var1, var2);
+  }
+  @Get('subt')
+  getSubt(@Query('var1') var1: number, @Query('var2') var2: number): number {
+    return this.appService.subt(var1, var2);
+  }
+  @Get('divis')
+  getDivs(@Query('var1') var1: number, @Query('var2') var2: number): number {
+    return this.appService.divis(var1, var2);
   }
 }
