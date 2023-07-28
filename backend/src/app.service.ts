@@ -14,4 +14,7 @@ export class AppService {
   soma(var1: any, var2: any): number {
     return parseInt(var1) + Number(var2);
   }
+  mult(var3: any, var4: any): number {
+    return parseInt(var3) * Number(var4);
+  }
 }

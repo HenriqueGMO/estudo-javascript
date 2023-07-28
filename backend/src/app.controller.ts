@@ -23,4 +23,8 @@ export class AppController {
   getSoma(@Query('var1') var1: number, @Query('var2') var2: number): number {
     return this.appService.soma(var1, var2);
   }
+  @Get('mult')
+  getMult(@Query('var3') var3: number, @Query('var4') var4: number): number {
+    return this.appService.mult(var3, var4);
+  }
 }
